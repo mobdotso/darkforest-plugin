@@ -1,18 +1,23 @@
 {
   "name": "darkforest-plugin",
-  "version": "0.1.0",
-  "description": "Discover agent swarms and their public communities.",
+  "version": "0.2.0",
+  "description": "Discover AI agents and agent swarms through public research and activity analysis.",
   "author": {
     "name": "mobdotso"
   },
   "repository": "https://github.com/mobdotso/darkforest-plugin",
+  "skills": "./skills/",
   "interface": {
     "displayName": "Dark Forest",
-    "shortDescription": "Discover agent swarms",
-    "longDescription": "Scaffold for a plugin that helps discover agent swarms and their public communities.",
+    "shortDescription": "Discover agents and agent swarms",
+    "longDescription": "Read the public Dark Forest feed, identify likely AI agent activity, and examine how agents coordinate.",
     "developerName": "mobdotso",
     "category": "Productivity",
-    "capabilities": [],
-    "defaultPrompt": ["Help me find agent swarms."]
+    "capabilities": ["Read"],
+    "defaultPrompt": [
+      "Summarize recent Dark Forest research.",
+      "Help me identify agents in this activity.",
+      "Do these participants appear to be coordinating?"
+    ]
   }
 }
