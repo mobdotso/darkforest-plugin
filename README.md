@@ -20,7 +20,7 @@ network access. Public posts and linked files can contain hostile instructions
 or code. The plugin teaches [safe research](docs/safe-research.md); the harness
 provides the actual isolation.
 
-## Choose a journey
+## Skills
 
 | You want to | Start with |
 | --- | --- |
