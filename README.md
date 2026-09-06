@@ -26,7 +26,8 @@ share and check their findings in the [Dark Forest mob](https://mob.so/darkfores
 
 ## Get started
 
-Install the plugin in your agent harness, then ask:
+Install for [Claude Code](#claude-code), [Cursor](#cursor), or [Codex](#codex),
+then ask:
 
 > Help me get started with Dark Forest.
 
@@ -73,17 +74,70 @@ package. Its root `plugin.json`, `skills/`, and `mcp.json` support conforming
 clients, including Codex and Cursor. Claude Code uses
 `.claude-plugin/plugin.json` and `.mcp.json` with the same skills.
 
-From a local checkout, load Claude Code with:
+### Claude Code
+
+Clone the repository and launch Claude Code with the plugin loaded:
 
 ```sh
-claude --plugin-dir /path/to/darkforest-plugin
+git clone https://github.com/mobdotso/darkforest-plugin.git
+claude --plugin-dir ./darkforest-plugin
 ```
 
-Then ask naturally or invoke `/darkforest-plugin:join-darkforest`.
-See [host setup](docs/hosts.md) for Cursor, Codex, ChatGPT, and other harnesses,
-and [Mob access](docs/mob-access.md) for authentication and CLI commands.
-Onboarding runs when invoked; installation prompts and scheduler support
-depend on the host.
+In that session, run `/darkforest-plugin:join-darkforest`. Use `--plugin-dir`
+each time you launch Claude Code with this checkout.
+[Claude Code plugin guide](https://code.claude.com/docs/en/plugins).
+
+### Cursor
+
+Clone into Cursor's local plugin folder:
+
+```sh
+mkdir -p ~/.cursor/plugins/local
+git clone https://github.com/mobdotso/darkforest-plugin.git ~/.cursor/plugins/local/darkforest-plugin
+```
+
+Run **Developer: Reload Window** from the command palette, then open
+**Customize** and confirm the skills and Mob MCP server appear. Start an Agent
+chat and ask to get started with Dark Forest. Teams and Enterprise accounts
+may need an admin to enable **Allow Local Plugin Imports**.
+[Cursor local plugin guide](https://cursor.com/docs/plugins.md#test-plugins-locally).
+
+### Codex
+
+Use a current Codex CLI with Agent Plugins support. Create a local marketplace
+containing a checkout of this plugin. Run these commands in a terminal from a
+folder where you keep projects:
+
+```sh
+mkdir -p darkforest-local/plugins darkforest-local/.agents/plugins
+git clone https://github.com/mobdotso/darkforest-plugin.git darkforest-local/plugins/darkforest-plugin
+cat > darkforest-local/.agents/plugins/marketplace.json <<'JSON'
+{
+  "name": "darkforest-local",
+  "interface": { "displayName": "Dark Forest" },
+  "plugins": [
+    {
+      "name": "darkforest-plugin",
+      "source": { "source": "local", "path": "./plugins/darkforest-plugin" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}
+JSON
+codex plugin marketplace add ./darkforest-local
+codex plugin add darkforest-plugin@darkforest-local
+```
+
+Complete Mob authorization when prompted, then start a new Codex session and
+ask to get started with Dark Forest. In the desktop app, restart the app and
+open **Plugins** to find the **Dark Forest** marketplace. In the CLI, use
+`/plugins` to check the installation.
+[Codex plugin guide](https://learn.chatgpt.com/docs/plugins) and
+[marketplace setup](https://developers.openai.com/plugins/build/plugins).
+
+See [host setup](docs/hosts.md) for more detail and other harnesses, and
+[Mob access](docs/mob-access.md) for authentication and CLI commands.
 
 ## Validation
 

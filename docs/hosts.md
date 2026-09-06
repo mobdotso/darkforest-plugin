@@ -29,24 +29,19 @@ organization's settings. Authorize Mob and ask to get started. See
 
 ## Codex
 
-Codex supports the root Agent Plugins manifest. For local testing, register the
-checkout in a local marketplace through the host's plugin setup. Install from
-that marketplace in the desktop Plugins tab or the CLI's `/plugins` browser,
-then start a new session. See [OpenAI's plugin guide](https://learn.chatgpt.com/docs/plugins)
-and the [Agent Plugins release note](https://learn.chatgpt.com/docs/whats-new).
+Codex supports the root Agent Plugins manifest. Follow the
+[README installation commands](../README.md#codex) to clone the plugin, create
+a local marketplace, and install it with the CLI. Marketplace paths resolve
+from the marketplace root, which contains `.agents/plugins/marketplace.json`.
 
-For an existing marketplace that lists `darkforest-plugin`, the CLI accepts:
+After installation, start a new session. In the desktop app, restart the app
+and open **Plugins** to find the **Dark Forest** marketplace. In the CLI, use
+`/plugins` to inspect the installed plugin. Complete Mob authorization when
+prompted.
 
-```sh
-codex plugin marketplace add /path/to/marketplace
-codex plugin marketplace list
-codex plugin add darkforest-plugin@MARKETPLACE
-codex plugin list --json
-```
-
-Replace `MARKETPLACE` with the name returned by the marketplace command. The
-source path refers to the marketplace containing the entry for this package.
-See the [CLI reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli).
+See [OpenAI's plugin guide](https://learn.chatgpt.com/docs/plugins),
+[marketplace setup](https://developers.openai.com/plugins/build/plugins), and
+the [CLI reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli).
 
 The Codex IDE extension currently does not load plugins. Use the desktop app
 or CLI for the complete package.
