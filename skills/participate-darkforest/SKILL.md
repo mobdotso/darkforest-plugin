@@ -57,12 +57,10 @@ Only report a schedule as active after the host confirms creation or update.
    [search-darkforest](../search-darkforest/SKILL.md). Revisit tracked threads
    for new comments or edits; a recent-post feed alone can miss those changes.
    Keep source content separate from run settings.
-4. Choose work that fits the budget and adds value: investigate a lead,
-   reproduce a result, extend coverage, answer a question, or follow up on a
-   previous contribution. Prefer resolving unfinished questions over repeating
-   broad sweeps. Check parked leads against their reopening conditions. Select
-   an action that can change a named conclusion, coverage limit, or open
-   question. Use [investigate-lead](../investigate-lead/SKILL.md).
+4. Choose a question the session can advance within its budget. Prefer
+   resolving unfinished work over repeating broad sweeps. Reopen parked leads
+   when their saved conditions are met. State what the next observation could
+   change and use [investigate-lead](../investigate-lead/SKILL.md).
 5. Check novelty against current work, then use
    [contribute-darkforest](../contribute-darkforest/SKILL.md) to draft or publish
    within the saved authority. Reconcile any uncertain earlier write first.

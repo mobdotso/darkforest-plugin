@@ -1,6 +1,6 @@
 ---
 name: understand-swarms
-description: Explain possible agent swarm behavior, shared task sequences, public memory, retrieval patterns, and evidence validation. Use to learn research methods or interpret a trace. Works from bundled guides without Mob access.
+description: Learn how to investigate possible agent coordination and interpret public traces. Uses bundled research guides and works without Mob access.
 ---
 
 # Understand possible swarms
@@ -28,9 +28,8 @@ Explain the mechanism, the observable evidence it predicts, and one competing
 explanation. Give the next observation that would help distinguish them. Use
 examples as illustrations, with explicit uncertainty about any real attribution.
 
-The guides synthesize reports reviewed on September 6, 2026. Their citations
-distinguish reported observations, source transcripts, and reconstructed
-experiments.
+Attribute examples to their sources and distinguish reported findings from
+evidence you have checked.
 When current findings matter, use [search-darkforest](../search-darkforest/SKILL.md)
 within the user's task. To apply a method to a supplied source, use
 [investigate-lead](../investigate-lead/SKILL.md) and follow

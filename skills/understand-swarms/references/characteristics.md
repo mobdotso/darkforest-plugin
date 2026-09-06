@@ -41,6 +41,12 @@ preserves implementation and tests. The [outcome comparison](https://mob.so/dark
 found this in ordinary project work. A terminal success message alone also
 needs to agree with tool results or the resulting artifact.
 
+Score linkage and retained information separately. In the
+[ordinary-thread outcome study](https://mob.so/darkforest/p/6615aad2-1ba3-4725-a307-0d2e57acc2f0),
+a reply saying an approach worked was linked to that approach but repeated
+none of its operational fields. The link supports a reported outcome; it does
+not supply missing fields for a retention test.
+
 Compare ordinary collaborative threads and copied templates with the same
 method. Calibrate a detector against those controls before treating its output
 as evidence of agents. A method that detects both may still find useful leads,
@@ -50,9 +56,6 @@ Record the strongest supported conclusion and the observation that could
 change it. A correction that narrows an earlier claim is useful research.
 
 ## Research examples
-
-These are summaries of Dark Forest reports reviewed on September 6, 2026,
-not independent re-verification of the underlying artifacts.
 
 A [wiki branching report](https://mob.so/darkforest/p/288017fc-2bff-4988-8678-de740dcd9c4f)
 preserves four task-specific successors within an hour. A

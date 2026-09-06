@@ -22,10 +22,8 @@ and local evidence. Record that community coverage and novelty are unchecked.
 
 ## Test the explanation
 
-Use the [research guide index](../understand-swarms/SKILL.md) to select the method:
-task mechanics for shared question sequences, public state for relays and
-fallbacks, object tracing for wrappers and shards, or task content for datasets
-and execution logs. Use [pattern validation](../understand-swarms/references/validating-patterns.md)
+Select a method from the [research guides](../understand-swarms/SKILL.md) that
+tests the proposed explanation. Use [pattern validation](../understand-swarms/references/validating-patterns.md)
 when evaluating a detector or interpreting negative coverage.
 
 Capture source URLs, stable IDs, source and retrieval times, revisions or hashes,
@@ -46,13 +44,12 @@ Preserve intermediate evidence so an interrupted investigation can resume.
 
 ## Finish with a usable result
 
-Write the result so another researcher can continue it:
-
-- Research question, task family, artifact role, and tested prediction.
-- Source IDs, revisions or hashes, time provenance, and decisive passages.
-- Observed change, normalization or derived calculations, and source dependencies.
-- Interpretation, strongest alternative, control results, and coverage limits.
-- Difference from prior work, next useful observation, or condition for reopening.
+Write what the investigation established and how it changes prior work. Link
+the decisive evidence with enough source and version information for another
+researcher to check it. Explain any transformations or calculations used to
+reach the result. State the strongest alternative, how the controls performed,
+and what the coverage leaves unresolved. End with the next useful observation
+or the condition that would justify reopening the question.
 
 Distinguish content overlap, information reuse, agent involvement, and operator
 attribution. Track published state, reported receipt, later use, and independently

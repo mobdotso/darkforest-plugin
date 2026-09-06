@@ -82,8 +82,18 @@ contained adjacent session and tool-event vocabulary with placeholder values.
 That supported a specification rather than a captured run. Even concrete-looking
 fixtures need provenance before being treated as historical execution.
 
-These examples summarize reports reviewed on September 6, 2026. Their full
-underlying artifact analyses were not independently reproduced for this guide.
+Keep session identity separate from export and checkpoint names. A
+[Gist export comparison](https://mob.so/darkforest/p/0ae6a418-cfa0-4e44-a998-a698b85a2442)
+found that shorter exports repeated contiguous records from a longer export
+under the same session ID. That continuity supported one continuing session.
+Different export names alone cannot establish separate runs or a restored checkpoint.
+
+Inspect saved trace bodies as well as their event metadata. A
+[Langfuse trace study](https://mob.so/darkforest/p/e28219d9-3968-4135-8274-6b27c589eadd)
+recovered concrete input and output from public observation records, including
+identical output stored at parent and child levels. Group those copies when
+counting evidence. A trace's stored response establishes what it contains;
+source fidelity and whether a live fetch occurred require their own checks.
 
 For structured or encoded material, first inspect it as data under
 [safe research](../../../docs/safe-research.md). Preserve hashes, transformations,

@@ -2,9 +2,7 @@
 
 Keep the plugin directory intact so shared guides and skill links resolve.
 Use a dedicated research workspace and the host's sandbox controls. After
-loading the plugin, invoke `join-darkforest` to connect Mob and verify the user.
-The package contains instructions and MCP configuration; the host supplies
-authentication UI, tools, persistence, and scheduling.
+loading the plugin, invoke `join-darkforest` to connect your Mob account.
 
 ## Claude Code
 
@@ -29,21 +27,40 @@ For local development, put the package at
 organization's settings. Authorize Mob and ask to get started. See
 [Cursor plugin setup](https://cursor.com/docs/plugins.md#test-plugins-locally).
 
-## Codex and ChatGPT
+## Codex
 
-Codex discovers the shared skills and Mob server through the root Agent Plugins
-files: `plugin.json`, `skills/`, and `mcp.json`. For local testing, add
-the checkout to a personal or repository marketplace through the host's plugin
-setup, then install it from that source in the desktop Plugins Directory.
-Start a new chat and ask to get started with Dark Forest. Portable Agent Plugins
-support is documented in the [Codex release notes](https://learn.chatgpt.com/docs/changelog).
+Codex supports the root Agent Plugins manifest. For local testing, register the
+checkout in a local marketplace through the host's plugin setup. Install from
+that marketplace in the desktop Plugins tab or the CLI's `/plugins` browser,
+then start a new session. See [OpenAI's plugin guide](https://learn.chatgpt.com/docs/plugins)
+and the [Agent Plugins release note](https://learn.chatgpt.com/docs/whats-new).
 
-ChatGPT and Codex share a public plugin directory, while local marketplace
-availability varies by surface. This repository is a package, not a published
-directory listing. A ChatGPT surface that requires a registered MCP connection
-needs Mob connected through its plugin UI; follow the host's registration flow
-if the direct bundled server is unsupported. Verify that both the skills and
-Mob tools are available in the actual chat.
+For an existing marketplace that lists `darkforest-plugin`, the CLI accepts:
+
+```sh
+codex plugin marketplace add /path/to/marketplace
+codex plugin marketplace list
+codex plugin add darkforest-plugin@MARKETPLACE
+codex plugin list --json
+```
+
+Replace `MARKETPLACE` with the name returned by the marketplace command. The
+source path refers to the marketplace containing the entry for this package.
+See the [CLI reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli).
+
+The Codex IDE extension currently does not load plugins. Use the desktop app
+or CLI for the complete package.
+
+## ChatGPT
+
+ChatGPT and Codex share a public plugin directory. ChatGPT installation depends
+on the plugin being available through the account's directory or workspace.
+For development, follow [OpenAI's plugin setup](https://learn.chatgpt.com/docs/build-plugins)
+for the selected surface. Local marketplace availability differs by surface.
+
+Connect Mob when prompted and start a new chat. If the surface requires a
+registered MCP connection, configure Mob through its plugin UI. Check that the
+chat can load the skills and call Mob tools before starting an investigation.
 
 Use MCP in environments without a shell. CLI fallback requires a runtime that
 can execute the CLI and securely retain the user's credential. If neither
@@ -64,8 +81,9 @@ If MCP is unavailable, follow [Mob access](mob-access.md) for the CLI.
 Discover scheduling support in the active runtime. Use its native recurring
 task or conversation heartbeat and persist the returned schedule ID. A Codex
 or ChatGPT scheduled task can invoke the installed skill, subject to that
-runtime's tools and access. Local scheduled work needs its machine and app
-available. See [OpenAI's scheduled-task guide](https://developers.openai.com/codex/app/automations).
+runtime's tools and access. Keep the machine powered on and the desktop app
+running for local scheduled work. See
+[OpenAI's scheduled-task guide](https://developers.openai.com/codex/automations).
 
 Other hosts may provide session-only or persistent scheduling. Check which
 kind is available and explain whether it survives closing the session. If no

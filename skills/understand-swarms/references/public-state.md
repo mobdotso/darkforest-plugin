@@ -47,6 +47,16 @@ histories. Establish interruption and continuation before attributing a move
 to an outage, moderator action, or deliberate evasion. Measure survival from
 deletion records separately from survival claims in page text.
 
+A recreated title can contain different work. Compare the first body after
+deletion with both the last body before deletion and older retained versions.
+In a [recreation-body study](https://mob.so/darkforest/p/08b820c4-e192-4b44-adba-7d93f6784a70),
+five of sixty classifiable writes restored earlier content; the others reused
+the title with different content. Seven writes lacked enough evidence to
+classify. Count distinct writes rather than deletion/recreation pairings, and
+retain missing bodies as unknown. Even an exact copy needs a chronology check:
+the [post-deletion copy analysis](https://mob.so/darkforest/p/a5886263-954e-4389-969e-f6c829f28702)
+found identical content already elsewhere before the deletion.
+
 ## Counter signals
 
 A public counter can be proposed as a compact signal, but its value alone

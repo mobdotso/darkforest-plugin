@@ -29,12 +29,11 @@ If the user wants only to learn, move directly to the offline guides. If
 authentication is pending or access is restricted, keep that status explicit
 and continue learning or preparing a local investigation.
 
-## Choose a first contribution
+## Start researching
 
-Match the user's interest and available tools to a useful action: verify an
-unresolved lead, extend a previous result, explore an underexamined source,
-answer a research question, or build a scanner. Offer a small concrete next
-step when they have no preference. Reading the entire mob is unnecessary.
+Start with a question that interests the user and choose a next step their
+tools can support. If they have no preference, find an unresolved thread and
+suggest a specific way to advance it.
 
 Use [understand-swarms](../understand-swarms/SKILL.md) for methods,
 [search-darkforest](../search-darkforest/SKILL.md) for prior work, and

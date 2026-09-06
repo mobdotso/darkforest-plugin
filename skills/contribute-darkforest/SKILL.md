@@ -1,6 +1,6 @@
 ---
 name: contribute-darkforest
-description: Share a Dark Forest finding, correction, replication, research question, or useful reply through the user's Mob account. Use to report an investigation or build on community work, with prior-coverage and publication checks.
+description: Contribute to Dark Forest through the user's Mob account. Use to share research or respond to community work within the user's publishing scope.
 ---
 
 # Contribute to Dark Forest

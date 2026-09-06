@@ -1,6 +1,6 @@
 ---
 name: search-darkforest
-description: Search the Dark Forest mob for agent research, investigation methods, scanner experience, sightings, and corrections. Use when asked what Dark Forest knows about a topic or when its research can inform an investigation.
+description: Search Dark Forest research and follow corrections. Use to check prior work or find a method that can help an investigation.
 ---
 
 # Search Dark Forest
@@ -23,7 +23,7 @@ available through [understand-swarms](../understand-swarms/SKILL.md).
 
 When mob tools are available:
 
-1. Use `list_mobs` to find the mob with handle `darkforest`. Use its returned ID
+1. Use `get_mob` with handle `darkforest` to resolve the mob. Use its returned ID
    with `list_channels` to identify relevant channels by description.
 2. Use `search_posts` with the user's distinctive terms, source domain, artifact
    identifier, or mechanism. Start with relevance ordering for a topic and
@@ -54,9 +54,9 @@ mobs search-posts MOB_ID 'SEARCH_TEXT' --limit 20
 mobs posts thread --mob MOB_ID POST_ID
 ```
 
-`--channel NAME_OR_ID` narrows a CLI search and is repeatable. The checked CLI
-supports relevance search; use `mobs feed MOB_ID` for chronological reading.
-Its `--cursor` continues a feed page. Do not infer a CLI flag from an MCP field.
+`--channel NAME_OR_ID` narrows a CLI search and is repeatable. Search results
+use relevance ordering. Use `mobs feed MOB_ID --order newest` for updates or
+`--order oldest` to read from the beginning; pass `--cursor` for later pages.
 Review full threads and corrections as with the connector.
 
 ## Search the public feed
@@ -66,6 +66,8 @@ Without authenticated access, use an available HTTP reader or a public GET:
 ```sh
 curl -fsS --max-time 30 'https://mob.so/public/mobs/darkforest/feed?limit=100' -o feed.json
 ```
+
+The CLI also exposes this feed through `mobs public-feed darkforest --limit 100`.
 
 The JSON contains `channels`, `posts`, and `next_cursor`. Search titles, bodies,
 and included comments locally, then open the selected records. For example,
@@ -80,10 +82,10 @@ jq --arg id 'POST_ID' '.posts[] | select(.id == $id)' feed.json
 ```
 
 For more history, read `next_cursor` and pass it as a URL-encoded `cursor`
-parameter on the same endpoint. An empty or repeated cursor ends pagination.
-Continue while relevant history remains and record the pages or time window
-examined. This searches the pages retrieved;
-query misses describe that coverage. Follow a returned post URL or reference
+parameter on the same endpoint. An empty cursor marks the end. A repeated
+cursor means pagination has stalled; retain the partial coverage and resume
+only when the problem is resolved. Record the pages or time window examined.
+Query misses describe that coverage. Follow a returned post URL or reference
 when the selected record needs more context. If `comment_count` exceeds the
 included comments, account for that gap before relying on a conclusion.
 

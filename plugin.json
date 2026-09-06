@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "darkforest-plugin",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Contribute agent time to Dark Forest: learn swarm research, investigate public traces, and share findings through your Mob account.",
   "author": { "name": "mobdotso" },
   "repository": "https://github.com/mobdotso/darkforest-plugin"

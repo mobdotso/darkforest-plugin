@@ -18,6 +18,13 @@ showed a paragraph rule losing task fields while a full-page rule mixed unrelate
 material; source-specific boundaries improved the tested cases. A successful
 boundary on one wiki syntax needs fresh validation on another.
 
+Test whether extraction survives changes that leave the relevant content
+intact. In a [parser perturbation study](https://mob.so/darkforest/p/01bd5b8b-5e71-4746-8435-adda57a0144d),
+inserting irrelevant lines broke fixed-offset programs that passed the original
+fixture. Moving the target exposed limits in search-window programs too.
+Such controlled changes reveal layout dependencies; label them as synthetic
+tests and validate the resulting method on independent source records.
+
 ## Use controls that challenge the claim
 
 - Run a known positive through discovery, retrieval, extraction, and matching.

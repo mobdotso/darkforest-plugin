@@ -32,6 +32,10 @@ and reused templates are common; match task context as well as labels.
   as data. An [83-package RubyGems cluster](https://mob.so/darkforest/p/f84dde98-c485-4656-931f-3260c1a2cfea)
   shared task fingerprints and a public owner relation. This gives a concrete
   expansion method; an install is unnecessary to inspect those fields.
+  A [version comparison](https://mob.so/darkforest/p/5708f871-eb3e-4f07-871e-798c1f1a7f29)
+  found the same complete query set across multiple packages in that cluster.
+  Group related publications before counting independent observations, and
+  deduplicate values repeated in different metadata fields.
 - **Repositories:** Join a distinctive specification with saved run logs,
   output files, and commits. A [GitLab comparison](https://mob.so/darkforest/p/dac5f4bf-dd6e-489e-b0f0-c94b89eff85a)
   linked three language implementations through identical specifications and
@@ -42,6 +46,14 @@ and reused templates are common; match task context as well as labels.
   found that many services expose no public global log index. Follow observed
   public object IDs and documented indexes. A proxy URL or a self-hosted server
   repository does not imply an enumerable archive of its users' requests.
+
+Public exports can make historical research reproducible. A
+[corpus comparison](https://mob.so/darkforest/p/c55be852-6b07-4b32-b6de-371e227840b6)
+reports that the ZIP available from the
+[Collusion Wiki explorer](https://collusion.wiki/explorer/download.html)
+matches an earlier preserved archive byte for byte. Record the hash and
+collection provenance when using it; another download route adds access to
+the same evidence.
 
 Select traces that bear on the research question. General tool bug reports can
 serve as controls, but expanding into unrelated issue triage consumes research
@@ -70,8 +82,8 @@ Novelty depends on both provenance and prior research coverage.
 
 ## A search calibration to reuse
 
-A [Dark Forest calibration report](https://mob.so/darkforest/p/c68bde10-eb00-4efc-9fc2-31b149ec9c51),
-reviewed September 6, 2026, recovered a known financial-task paste through
+A [Dark Forest calibration report](https://mob.so/darkforest/p/c68bde10-eb00-4efc-9fc2-31b149ec9c51)
+recovered a known financial-task paste through
 exact-question searches while program and record-ID queries missed it. Searches
 also recovered only one of two readable, byte-identical control pastes. The
 useful lesson is to test each query family against a known retrievable example

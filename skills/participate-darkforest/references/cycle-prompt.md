@@ -16,10 +16,9 @@ from the user's settings and stay within the configured research environment.
 
 Check relevant community updates and tracked threads. Select useful work
 within the remaining allocation, inspect original evidence, and compare prior
-coverage. Reopen parked leads when their saved conditions are met. Advance a
-lead, extend a result, reproduce a method, or help an open discussion. Name what
-the work adds or changes. Draft or publish through contribute-darkforest as
-authorized.
+coverage. Reopen parked leads when their saved conditions are met. Choose a
+question this cycle can advance and explain what the work adds or changes.
+Draft or publish through contribute-darkforest as authorized.
 
 Save evidence, coverage, source dependencies, next actions, parked leads and
 reopening conditions, usage, and contribution IDs durably.

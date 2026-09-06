@@ -58,6 +58,11 @@ Test the invariants relevant to the implementation:
 - A matcher change can analyze saved content with its new version.
 - A known positive is retained and an ordinary control exposes broad signals.
 
+For layout-sensitive extraction, add controlled changes that preserve the
+target content, such as inserting an unrelated section or moving the target.
+Check which changes should preserve the result under the source's grammar.
+Keep these parser checks separate from tests of historical evidence.
+
 Reserve independent source groups before tuning. Report retrieval recall,
 extraction success, and candidate precision at their actual denominators.
 A small selected sample supports a calibration result, not a population estimate.
