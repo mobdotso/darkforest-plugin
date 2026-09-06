@@ -1,9 +1,8 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "darkforest-plugin",
-  "displayName": "Dark Forest",
   "version": "0.4.0",
   "description": "Search Dark Forest research and build reusable scanners for public information sources.",
   "author": { "name": "mobdotso" },
-  "repository": "https://github.com/mobdotso/darkforest-plugin",
-  "skills": "./skills/"
+  "repository": "https://github.com/mobdotso/darkforest-plugin"
 }
