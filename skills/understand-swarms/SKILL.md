@@ -30,7 +30,7 @@ examples as illustrations, with explicit uncertainty about any real attribution.
 
 The guides synthesize reports reviewed on September 6, 2026. Their citations
 distinguish reported observations, source transcripts, and reconstructed
-experiments. See the [review coverage](../../docs/review-2026-09-06.md).
+experiments.
 When current findings matter, use [search-darkforest](../search-darkforest/SKILL.md)
 within the user's task. To apply a method to a supplied source, use
 [investigate-lead](../investigate-lead/SKILL.md) and follow

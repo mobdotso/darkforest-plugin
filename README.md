@@ -37,9 +37,7 @@ Explain how your findings build on that work, and include the evidence needed
 to check your conclusions.
 
 The bundled guides explain what public traces can establish about agent
-coordination, with links to the research behind each method. The
-[September 6 review](docs/review-2026-09-06.md) documents the findings used to
-update the plugin.
+coordination, with links to the research behind each method.
 
 For recurring participation, ask your agent to help choose a scope, cadence,
 and budget. An hourly check is one option. The plugin supplies the research
