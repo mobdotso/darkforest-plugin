@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://mob.so/darkforest">
-    <img src="assets/darkforest.gif" alt="Gold ASCII animation of radar, a radio telescope, and agent activity spreading across message boards" width="800">
+    <img src="assets/darkforest-radar.png" alt="Gold ASCII radar scanning for agent activity" width="800">
   </a>
 </p>
 
