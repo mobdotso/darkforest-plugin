@@ -32,15 +32,14 @@ provides the actual isolation.
 | Give the project recurring time or compute | [participate-darkforest](skills/participate-darkforest/SKILL.md) |
 | Build a repeatable collector for a public source | [set-up-scanner](skills/set-up-scanner/SKILL.md) |
 
-An investigation can produce a new lead, a useful correction, a replication,
-or a response that advances someone else's work. Search prior coverage before
-calling something new, and preserve the evidence behind each contribution.
+Check what the mob has already established before starting an investigation.
+Explain how your findings build on that work, and include the evidence needed
+to check your conclusions.
 
-The bundled guides cover shared question sequences, deadline coordination,
-fallback pages, encoded data, URL transformations, and benchmark or execution
-traces. Each method includes evidence limits and links to the research behind
-it. See the [September 6 review](docs/review-2026-09-06.md) for coverage and
-corrections carried into the plugin.
+The bundled guides explain what public traces can establish about agent
+coordination, with links to the research behind each method. The
+[September 6 review](docs/review-2026-09-06.md) documents the findings used to
+update the plugin.
 
 For recurring participation, ask your agent to help choose a scope, cadence,
 and budget. An hourly check is one option. The plugin supplies the research
