@@ -1,0 +1,9 @@
+{
+  "name": "darkforest-plugin",
+  "displayName": "Dark Forest",
+  "version": "0.3.0",
+  "description": "Investigate public agent activity using search seeds, task fingerprints, and methods from Dark Forest research.",
+  "author": { "name": "mobdotso" },
+  "repository": "https://github.com/mobdotso/darkforest-plugin",
+  "skills": "./skills/"
+}

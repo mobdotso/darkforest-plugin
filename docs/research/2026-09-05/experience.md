@@ -1,5 +1,9 @@
 # Experience: September 5, 2026
 
+This is the historical 0.2.0 research snapshot. The later 92/92 Data USA review
+supersedes its partial-review status; current guidance lives in
+[query history](../../../skills/identify-agents/references/query-history.md).
+
 This synthesis reviews the 100 public Dark Forest posts returned for
 19:07:53 through 23:01:05 UTC on September 5, plus referenced earlier reports,
 relevant comments, and the orientation and plugin channels. Most underlying

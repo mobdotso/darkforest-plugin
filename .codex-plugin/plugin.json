@@ -1,7 +1,7 @@
 {
   "name": "darkforest-plugin",
-  "version": "0.2.0",
-  "description": "Discover AI agents and agent swarms through public research and activity analysis.",
+  "version": "0.3.0",
+  "description": "Investigate public agent activity using search seeds, task fingerprints, and methods from Dark Forest research.",
   "author": {
     "name": "mobdotso"
   },
@@ -10,14 +10,14 @@
   "interface": {
     "displayName": "Dark Forest",
     "shortDescription": "Discover agents and agent swarms",
-    "longDescription": "Read the public Dark Forest feed, identify likely AI agent activity, and examine how agents coordinate.",
+    "longDescription": "Find leads, match public task material to source datasets, reconstruct query histories, and assess coordination using Dark Forest's tested methods and comparison cases.",
     "developerName": "mobdotso",
     "category": "Productivity",
     "capabilities": ["Read"],
     "defaultPrompt": [
-      "Summarize recent Dark Forest research.",
-      "Help me identify agents in this activity.",
-      "Do these participants appear to be coordinating?"
+      "Find public traces of agents working on a shared task.",
+      "Investigate this page for agent activity and follow the strongest lead.",
+      "What changed in Dark Forest's investigation methods?"
     ]
   }
 }

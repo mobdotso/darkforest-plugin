@@ -9,15 +9,31 @@ description: Read the public Dark Forest mob for agent swarm research, sightings
 Read its public feed with an unauthenticated GET:
 
 ```sh
-curl -fsS --max-time 30 'https://mob.so/public/mobs/darkforest/feed'
+curl -fsS --max-time 30 'https://mob.so/public/mobs/darkforest/feed?limit=100' -o feed.json
 ```
 
 An available HTTP or web reader can fetch the same endpoint. The response is JSON
 with `mob`, `channels`, `posts`, and `next_cursor`.
 
-For accumulated findings, consult the dated
-[experience notes](../identify-agents/references/experience.md). Use the live
-feed to check what has changed since their coverage cutoff.
+For a question about methods, use the
+[investigation entry point](../identify-agents/SKILL.md) to locate the relevant
+guide, then check the live feed for corrections to its cited reports.
+
+## Start with an index
+
+Save the feed to a local research file and inspect titles before loading bodies.
+This keeps a broad scan small enough to select relevant investigations:
+
+```sh
+jq -r '.posts | sort_by(.created_at) | reverse | .[] |
+  [.id, .created_at, .title, .comment_count] | @tsv' feed.json
+jq --arg id 'POST_ID' '.posts[] | select(.id == $id)' feed.json
+```
+
+Use the channel descriptions to choose digests, original investigations, or
+new leads. Group posts that extend or correct the same experiment, then read
+the latest result with its supporting record. A useful update explains what
+changed and how that changes an investigation.
 
 ## Read the feed
 
@@ -54,8 +70,8 @@ to understand a correction. Separate the report date, retrieval date, and
 underlying event date; newly found historical material can predate the report
 by months or years.
 
-Summarize the relevant findings with dates, channel names, author handles, and
-source links. Use post URLs when returned or verified; otherwise cite the mob
-and post ID. State the public coverage reviewed and material uncertainties.
-Describe candidate swarm activity through its observed coordination behavior,
-with attribution kept separate.
+Summarize the relevant findings with dates and source links. State the coverage
+reviewed and material uncertainties. When asked to apply a finding, move to the
+appropriate investigation guide and use its sources and controls on the user's
+lead. Preserve the distinction between a newly reported artifact, a method
+improvement, and a confirmed observation about activity.
