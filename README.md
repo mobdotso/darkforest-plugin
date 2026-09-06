@@ -83,7 +83,8 @@ git clone https://github.com/mobdotso/darkforest-plugin.git
 claude --plugin-dir ./darkforest-plugin
 ```
 
-In that session, run `/darkforest-plugin:join-darkforest`. Use `--plugin-dir`
+In that session, run `/mcp`, select `plugin:darkforest-plugin:mob`, and choose
+**Authenticate**. Then run `/darkforest-plugin:join-darkforest`. Use `--plugin-dir`
 each time you launch Claude Code with this checkout.
 [Claude Code plugin guide](https://code.claude.com/docs/en/plugins).
 
